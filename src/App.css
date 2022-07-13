@@ -1,0 +1,739 @@
+.marquee-container {
+  overflow-x: hidden !important;
+  display: flex !important;
+  flex-direction: row !important;
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.marquee {
+  flex: 0 0 auto;
+  min-width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+
+.marquee:hover > div {
+  --duration : 0s; /* met en pause le défilement */
+  --iteration-count:0s
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+}
+100% {
+  transform: translateX(-100%);
+}
+}
+
+
+@media only screen and (max-width: 860px) {
+  .defileParent {
+    display: block;
+    margin: 3em auto;
+    overflow: hidden;
+    position: relative;
+    table-layout: fixed;
+    width: 100%;
+  }
+  
+  .defile {
+    display:block;
+    -webkit-animation:linear marqueelike 15s infinite ;
+    -moz-animation:linear marqueelike 15s infinite ;
+    -o-animation:linear marqueelike 15s infinite ;
+    -ms-animation:linear marqueelike 15s infinite ;
+    animation:linear marqueelike 15s infinite ;
+    margin-left:-100%;
+    padding:0 5px;
+    text-align:left;
+    height:25px;
+  }
+  }
+
+p{
+    white-space: pre-wrap;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+  @media screen and (min-width: 600px) and (max-width:1600px) {
+    .Main{
+        display: flex;
+        justify-content: space-between;
+        margin:0px;
+    }
+
+    .Right_Sidebar_Area{
+      width: 50%;
+      display: grid;
+      height: 100%;
+      align-items: start;
+      justify-content: space-around;
+      justify-items: end;
+    }
+    .Left_Sidebar_Area{
+        width: 50%;
+        height: 100%;
+        margin-left: 50px;
+    }
+    .MuiTabs-flexContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slogan p{
+      margin-top: 5px;
+      color:#696969;
+      text-align: center;
+      font-size: 50px;
+      font-style: italic;
+      font-family: Foco;  
+      margin: auto;
+      }
+      .image > img{
+        width:80%;
+        margin-left: 50px;
+      }
+      .starling > img{
+        width:118px;
+        height:118px;
+        object-fit: fill;
+        display: block;
+        margin: auto;
+        margin-bottom: 60px;
+       }
+  }
+
+  @media screen and (max-width:600px)  {
+
+    .Main{
+      display: flex;
+      margin: 0px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+    .MuiTabs-flexContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Right_Sidebar_Area{
+        width: 100%;
+        margin: auto;
+        transform: translate(28px, 0px);
+    }
+    .Left_Sidebar_Area{
+      height: 20%;
+      width: 100%;
+      
+      margin-left: 5rem;
+        
+    }
+   .image{
+     display: none;
+   }
+   .slogan p{
+    margin-top: 5px;
+    color:#696969;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Foco;  
+    margin: auto;
+    }
+   .starling > img{
+    width:118px;
+    height:118px;
+    object-fit: fill;
+    display: block;
+    margin: auto;
+   }
+   .affich1{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+   }
+   .div1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  }
+  
+  /* @media screen and (min-width:480px)and (max-width:720px)  {
+    .Main{
+      display: flex;
+      margin: 0px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+  }
+  .form{
+    background-color: #fff;
+    border: none;
+    display: flex;
+    padding: 60px 40px;
+    align-items: center;
+    margin-left: 0px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .affich1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+   }
+   .div1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .image{
+    display: none;
+  }
+  .starling > img{
+    width: 8rem;
+    height: 8rem;
+    object-fit: fill;
+    display: block;
+    margin: auto;
+    
+  }
+  .form{
+    background-color: #fff;
+    border: none;
+    display: flex;
+    padding: 60px 40px;
+    align-items: center;
+    margin-left: 0px;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .Right_Sidebar_Area{
+    width: 100%;
+    margin: auto;
+}
+.Left_Sidebar_Area{
+  height: 20%;
+  width: 100%;
+  
+  margin-left: 5rem;
+}
+  .MuiTabs-flexContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slogan p{
+    margin-top: 5px;
+    color:#696969;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Foco;  
+    margin: auto;
+    margin-bottom: 30px
+    
+    }
+  } */
+  /***********************************Formulaire connexion*****************************/
+  
+
+  .form{
+    
+    border: none;
+    /* padding: 60px 40px; */
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .input{  
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+    position: relative;
+  }
+  
+  .input input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    padding-left: 40px;
+    margin-bottom: 2rem;
+    border:none;
+    box-shadow:  #19a8d973 0px 1px 2px;
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  .icon{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 5px 8px;
+  }
+  .icons{
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    padding: 5px 8px;
+    
+  }
+  .btns{
+    margin-bottom: 12px;
+    background: #19A8d9;
+    border: 1px solid #19A8d9;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-left: 0rem;
+     height: 35px;
+    
+  }
+  .mdp{
+    font-size: 14px;
+    margin-top: 1rem;
+   text-align: center;
+   color:#19A8d9 ;
+   font-weight: bold;
+  }
+  .fotter{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-between;
+  }
+  /************************************************************************/
+
+  /********************************************Formulaire d'inscription********************/
+.form-wrapper{
+   background-color: #fff;
+    border: none;
+    /* width: 350px; */
+    /* height: 23rem; */
+    /* padding: 60px 40px; */
+    margin-top: 0px;
+    margin-left: 3px;
+}
+
+.input{  
+  width: 18rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+.fullname{
+  display: flex;
+  
+}
+
+
+.pseudo input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19a8d973 0px 1px 4px;
+  border-radius: 20px;
+}
+.email input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19a8d973 0px 1px 4px;
+  border-radius: 20px;
+}
+.password input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border:none;
+  box-shadow:  #19a8d973 0px 1px 4px;
+  border-radius: 20px;
+}
+.password2 input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  border:none;
+  box-shadow:  #19A8d9 0px 1px 4px;
+  border-radius: 20px;
+}
+
+.Genre{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.radio{
+  display: flex;
+  width: 100%;
+  
+}
+.Femme{
+  font-size: 16px;
+  transform: translate(25px, 0px);
+}
+.Homme{
+  font-size: 16px;
+  transform: translate(25px, 0px);
+}
+
+.homme{
+  transform: translate(30px, 2px);
+}
+
+.femme{
+  transform: translate(30px, 2px);
+}
+
+.borderr{
+  margin-top: 0;
+  border:none;
+  box-shadow:  #19a8d973 0px 1px 4px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 2px 8px 0px 8px;
+}
+.submit{
+  width: 40%;
+  height: 40px;
+  line-height: 40px;
+  background: #19A8d9;
+  border: 1px solid #19A8d9;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  margin: 15px 0px 15px 80px;
+}
+
+/********/
+
+.error{
+  display: block;
+  color: #e74c3c;
+  font-weight: bold;
+  font-size: 11px;
+  padding-top: 3px;
+  margin-top: 0px;
+  
+
+}
+/**********************************************************************************************************/
+  /*************************************************Navigation*********************************************************/
+  nav{
+    margin-top: 50px;
+    margin-bottom: 0;
+    height: 50px;
+  }
+  .liste{
+   color: #19A8d9;
+   cursor: pointer;
+   font-size: 16px;
+   height: 100%;
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   margin-right: 0px;
+   margin-left: 30px;
+   padding: 15px;
+   background: transparent;
+   padding-right: 20px;
+   padding-left: 20px;
+   border-left: transparent;
+   border-right: transparent;
+   border-top: transparent;
+  }
+ 
+ 
+
+
+
+  /* @media screen and (min-width: 600px) and (max-width:1600px) {
+    .Main{
+        display: flex;
+        justify-content: space-between;
+        margin:0px;
+    }
+
+    .Right_Sidebar_Area{
+      width: 50%;
+      display: grid;
+      height: 100%;
+      align-items: start;
+      justify-content: space-around;
+      justify-items: end;
+    }
+    .Left_Sidebar_Area{
+        width: 50%;
+        height: 100%;
+        margin-left: 50px;
+    }
+    .MuiTabs-flexContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slogan p{
+      margin-top: 5px;
+      color:#696969;
+      text-align: center;
+      font-size: 50px;
+      font-style: italic;
+      font-family: Foco;  
+      margin: auto;
+      }
+      .image > img{
+        width:80%;
+        margin-left: 50px;
+      }
+      .starling > img{
+        width:118px;
+        height:118px;
+        object-fit: fill;
+        display: block;
+        margin: auto;
+        margin-bottom: 60px;
+       }
+  }
+
+  @media screen and (max-width:600px)  {
+    .Main{
+      display: flex;
+      margin: 0px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+    .MuiTabs-flexContainer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Right_Sidebar_Area{
+        width: 100%;
+        margin: auto;
+    }
+    .Left_Sidebar_Area{
+      height: 20%;
+      width: 100%;
+      
+      margin-left: 5rem;
+        
+    }
+   .image{
+     display: none;
+   }
+
+   .slogan p{
+    margin-top: 5px;
+    color:#696969;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-family: Foco;  
+    margin: auto;
+    }
+
+   .starling > img{
+    width:118px;
+    height:118px;
+    object-fit: fill;
+    display: block;
+    margin: auto;
+   }
+
+   .affich1{
+    display: flex;
+    flex-direction: column;
+    
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+   }
+
+   .div1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  }
+   */
+  
+  .form{
+    
+    border: none;
+    padding: 60px 40px;
+    display: flex;
+    margin-left: 0px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .icon{
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 5px 8px;
+  }
+  .icons{
+    position: absolute;
+    left: 0;
+    top: 4.5rem;
+    padding: 5px 8px;
+    
+  }
+  .btns{
+    /* width: 40%;
+   
+    line-height: 40px; */
+    background: #19A8d9;
+    border: 1px solid #19A8d9;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin-left: 0rem;
+     height: 35px;
+    
+  }
+  .mdp{
+    font-size: 14px;
+    margin-top: 1rem;
+   text-align: center;
+   color:#19A8d9 ;
+   font-weight: bold;
+  }
+
+  /************************************************************************/
+
+  /********************************************Formulaire d'inscription********************/
+  @media screen and (min-width:600px) and (max-width:1600px){
+    
+    .prénom input {
+      width: 9rem;
+      margin-right: 5px;
+      height: 40px;
+      padding: 0 15px;
+      margin-bottom: 1rem;
+      background-color: transparent;
+      border:none;
+      box-shadow:  #19a8d973 0px 1px 2px;
+      border-radius: 20px;
+    }
+    .name input {
+      width: 9rem;
+      margin-right: 5px;
+      height: 40px;
+      padding: 0 15px;
+      margin-bottom: 1rem;
+      background-color: transparent;
+      border:none;
+      box-shadow:  #19a8d973 0px 1px 2px;
+      border-radius: 20px;
+
+    }
+  }
+
+@media screen and (min-width:275px) and (max-width:375px) {
+  
+
+}
+  
+@media screen and (min-width:275px) and (max-width:600px){
+  .fullname{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prénom input  {
+    width: 90%;
+    margin-right: 5px;
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border:none;
+    box-shadow:  #19a8d973 0px 1px 2px;
+    border-radius: 20px;
+    
+  }
+
+  .name input{
+    width: 90%;
+    margin-right: 5px;
+    height: 40px;
+    padding: 0 15px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border:none;
+    box-shadow:  #19a8d973 0px 1px 2px;
+    border-radius: 20px;
+  }
+}

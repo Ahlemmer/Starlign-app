@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.respns {
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.marginFix {
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.bottomnavcall {
+  width: 300px;
+}
+.callVidfix {
+  width: 400px;
+  height: "80%";
+}
+.callvid2fix {
+  width: calc(50vw - 160px);
+  height: calc(((100vh - 130px) * 0.8));
+}
+.callvid2fix1 {
+  width: calc(50vw - 160px);
+  height: calc(((100vh - 130px) * 0.8));
+  margin-right: 20px;
+}
+.homepopup {
+  display: flex;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 400px;
+  background-color: red;
+  z-index: 999999;
+}
+@media only screen and (max-width: 720px) {
+  .respns {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .marginFix {
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .bottomnavcall {
+    width: 100%;
+  }
+  .callVidfix {
+    width: 100%;
+    flex: 1;
+  }
+  .callvid2fix {
+    width: 100%;
+    height: calc(((100vh - 130px) * 0.5) - 60px);
+  }
+  .callvid2fix1 {
+    width: 100%;
+    height: calc(((100vh - 130px) * 0.5) - 60px);
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .homepopup {
+    display: flex;
+    bottom: 20;
+    left: 20px;
+    width: calc(100vw - 40px);
+    position: fixed;
+  }
+}

@@ -1,0 +1,520 @@
+.tabs {
+  margin-top: 6rem;
+  margin-left: 2rem;
+ }
+ .text{
+   font-size: 14px;
+   color: #808080;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .Input{
+   position: relative;
+   width: 60%;
+   height: 40px;
+   padding: 0 15px;
+   padding-left: 20px;
+   margin-bottom: 1rem;
+   margin-left: 1rem;
+   margin-top: 2rem;
+   border:none;
+   box-shadow:  #19A8d9 0px 1px 2px;
+   background-color: transparent;
+   border-radius: 20px;
+ }
+ 
+ .Input1{
+   position: relative;
+   width: 60%;
+   height: 40px;
+   padding: 0 15px;
+   padding-left: 20px;
+   margin-bottom: 0rem;
+   margin-left: 1rem;
+   margin-top: 0rem;
+   border:none;
+   box-shadow:  #19A8d9 0px 1px 2px;
+   background-color: transparent;
+   border-radius: 20px;
+ }
+ .Btn{
+   position: sticky;
+   padding-bottom: 1rem;
+   font-size: 1.2rem;
+   outline: none;
+   margin-left: -3.5rem;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+ }
+ .bouton{
+   margin-left: 2.5rem;
+   margin-right: 2rem;
+   margin-top: 3rem;
+   width: 30%;
+   height: 40px;
+   line-height: 40px;
+   background: #19A8d9;
+   border: 1px solid #19A8d9;
+   border-radius: 20px;
+   cursor: pointer;
+   color: #fff;
+   display: block;
+   font-size: 16px;
+   
+ }
+ 
+ .bouton1{
+   margin-top: 3rem;
+   width: 30%;
+   height: 40px;
+   line-height: 40px;
+   background: #19A8d9;
+   border: 1px solid #19A8d9;
+   border-radius: 20px;
+   cursor: pointer;
+   color: #fff;
+   display: block;
+   font-size: 16px;
+   
+ }
+ .fotter1{
+   display: flex;  
+ }
+ .contenu{
+   margin-top: 2rem;
+   margin-left: 1rem;
+   margin-right: 2rem;
+ }
+ .error{
+   display: block;
+   color: #e74c3c;
+   font-weight: bold;
+   font-size: 11px;
+   padding-top: 3px;
+   margin-top: 0px;
+   
+   
+   }
+   .inff{
+     display: flex;
+     margin-left: 25px;
+   }
+
+ 
+
+   .info_notifs{
+     margin-left: 20px;
+   }
+
+
+
+   .biix{
+     width: 80%;
+     margin-top: 85px;
+     border: 1px solid rgb(239, 243, 244);
+     border-right: 1px solid rgb(239, 243, 244);
+     border-top: none;
+   }
+   /* .icoo{
+    
+   } */
+   .boo{
+    background-color: #f0f2f5;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+   }
+   .boo .badibou{
+    margin-top: 15px;
+
+   }
+
+   .texaaa{
+    font-size: 10px;
+    color: #808080;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+   .boo .div_icon_notif{
+    margin-left: 20px;
+   }
+   .roo{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+   }
+
+   /* @media screen and (max-width:800px){
+     .Btn{
+       font-size: 1rem;
+      /* margin-left: -2px;
+      padding-right: 0px;
+      margin: 0px;
+     }
+   } */
+
+   @media screen and (min-width:275px) and (max-width:375px){
+    .respo{
+      font-size: 8px;
+    }
+    .Btn{
+      /* font-size: 1rem;
+      margin-left: -2rem; */
+      display: none;
+    }
+    .text{
+      font-size: 10px;
+    }
+    .texts{
+      font-size: 12px;
+    }
+    .titre{
+      font-size: 15px;
+    }
+    .Input{
+      width: 12rem;
+      margin-left: 0rem;
+    }
+    .Input1{
+      width: 12rem;
+      margin-left: 0rem;
+    }
+    .Input::placeholder{
+      font-size: 11px;
+    }
+    .Input1::placeholder{
+      font-size: 11px;
+    }
+    .bouton{
+      font-size: 14px;
+      width: 5rem;
+      margin-left: -0px;
+    }
+    .bouton1{
+      font-size: 14px;
+      width: 5rem;
+    }
+  }
+
+  @media screen and (min-width:376px) and (max-width:400px){
+    .respo{
+      font-size: 8px;
+    }
+    .Btn{
+      /* font-size: 1rem;
+      margin-left: -2rem; */
+      display: none;
+    }
+    .text{
+      font-size: 12px;
+    }
+    .texts{
+      font-size: 12px;
+    }
+    .titre{
+      font-size: 15px;
+    }
+    .Input{
+      width: 12rem;
+      margin-left: 0rem;
+    }
+    .Input1{
+      width: 12rem;
+      margin-left: 0rem;
+    }
+    .Input::placeholder{
+      font-size: 11px;
+    }
+    .Input1::placeholder{
+      font-size: 11px;
+    }
+    .bouton{
+      font-size: 14px;
+      width: 5rem;
+      margin-left: -0px;
+    }
+    .bouton1{
+      font-size: 14px;
+      width: 5rem;
+    }
+  }
+
+  
+  @media screen and (min-width:401px) and (max-width:500px){
+    .respo{
+      font-size: 8px;
+    }
+    .Btn{
+      /* font-size: 1rem;
+      margin-left: -2rem; */
+      display: none;
+    }
+    .text{
+      font-size: 12px;
+    }
+    .texts{
+      font-size: 12px;
+    }
+    .titre{
+      font-size: 15px;
+    }
+    .Input{
+      width: 15rem;
+      margin-left: 0rem;
+    }
+    .Input1{
+      width: 15rem;
+      margin-left: 0rem;
+    }
+    .Input::placeholder{
+      font-size: 11px;
+    }
+    .Input1::placeholder{
+      font-size: 11px;
+    }
+    .bouton{
+      font-size: 14px;
+      width: 5rem;
+      margin-left: -0px;
+    }
+    .bouton1{
+      font-size: 14px;
+      width: 5rem;
+    }
+  }
+
+  
+  @media screen and (min-width:501px) and (max-width:799px){
+    .respo{
+      font-size: 8px;
+    }
+    .Btn{
+      /* font-size: 1rem;
+      margin-left: -2rem; */
+      display: none;
+    }
+    .text{
+      font-size: 13px;
+    }
+    .texts{
+      font-size: 13px;
+    }
+    .titre{
+      font-size: 16px;
+    }
+    .Input{
+      width: 18rem;
+      margin-left: 0rem;
+    }
+    .Input1{
+      width: 18rem;
+      margin-left: 0rem;
+    }
+    .Input::placeholder{
+      font-size: 14px;
+    }
+    .Input1::placeholder{
+      font-size: 11px;
+    }
+    /* .bouton{
+      font-size: 14px;
+      width: 5rem;
+      margin-left: -0px;
+    }
+    .bouton1{
+      font-size: 14px;
+      width: 5rem;
+    } */
+  }
+
+  
+  @media screen and (min-width:800px) and (max-width:980px){
+    .respo{
+      font-size: 8px;
+    }
+    /* .Btn{
+       font-size: 1rem;
+      margin-left: -2rem; 
+      display: none;
+    } */
+    .text{
+      font-size: 14px;
+    }
+    .texts{
+      font-size: 14px;
+    }
+    .titre{
+      font-size: 16px;
+    }
+    .Input{
+      width: 20rem;
+      margin-left: 0rem;
+    }
+    .Input1{
+      width: 20rem;
+      margin-left: 0rem;
+    }
+    .Input::placeholder{
+      font-size: 11px;
+    }
+    .Input1::placeholder{
+      font-size: 14px;
+    }
+    
+  }
+
+
+/* .tabs {
+  margin-top: 6rem;
+  margin-left: 2rem;
+ }
+ .text{
+   font-size: 14px;
+   color: #808080;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .Input{
+   position: relative;
+   width: 60%;
+   height: 40px;
+   padding: 0 15px;
+   padding-left: 20px;
+   margin-bottom: 1rem;
+   margin-left: 1rem;
+   margin-top: 2rem;
+   border:none;
+   box-shadow:  #19A8d9 0px 1px 2px;
+   background-color: transparent;
+   border-radius: 20px;
+ }
+ .Input1{
+   position: relative;
+   width: 60%;
+   height: 40px;
+   padding: 0 15px;
+   padding-left: 20px;
+   margin-bottom: 0rem;
+   margin-left: 1rem;
+   margin-top: 0rem;
+   border:none;
+   box-shadow:  #19A8d9 0px 1px 2px;
+   background-color: transparent;
+   border-radius: 20px;
+ }
+ .Btn{
+   position: sticky;
+   padding-bottom: 1rem;
+   font-size: 1.2rem;
+   outline: none;
+   margin-left: -3.5rem;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+ }
+ .bouton{
+   margin-left: 2.5rem;
+   margin-right: 2rem;
+   margin-top: 3rem;
+   width: 30%;
+   height: 40px;
+   line-height: 40px;
+   background: #19A8d9;
+   border: 1px solid #19A8d9;
+   border-radius: 20px;
+   cursor: pointer;
+   color: #fff;
+   display: block;
+   font-size: 16px;
+   
+ }
+ 
+ .bouton1{
+   margin-top: 3rem;
+   width: 30%;
+   height: 40px;
+   line-height: 40px;
+   background: #19A8d9;
+   border: 1px solid #19A8d9;
+   border-radius: 20px;
+   cursor: pointer;
+   color: #fff;
+   display: block;
+   font-size: 16px;
+   
+ }
+ .fotter1{
+   display: flex;  
+ }
+ .contenu{
+   margin-top: 2rem;
+   margin-left: 1rem;
+   margin-right: 2rem;
+ }
+ .error{
+   display: block;
+   color: #e74c3c;
+   font-weight: bold;
+   font-size: 11px;
+   padding-top: 3px;
+   margin-top: 0px;
+   
+   
+   }
+   .inff{
+     display: flex;
+     margin-left: 25px;
+   }
+
+ 
+
+   .info_notifs{
+     margin-left: 20px;
+   }
+
+
+
+   .biix{
+     width: 80%;
+     margin-top: 85px;
+     border: 1px solid rgb(239, 243, 244);
+     border-right: 1px solid rgb(239, 243, 244);
+     border-top: none;
+   }
+   .icoo{
+    
+   }
+   .boo{
+     margin-top: 5px;
+     background-color: #74b2d1;
+     width: 100%;
+     margin-left: -45px;
+     margin-bottom: -10px;
+     
+    
+   }
+   .roo{
+
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+
+    
+   }
+
+   @media screen and (max-width:800px){
+     .Btn{
+       font-size: 1rem;
+       margin-left: -2rem;
+     }
+   } */

@@ -1,0 +1,13 @@
+.lienn {
+    margin-top: 50px ;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #D3D3D3;
+  background-color: #D3D3D3;
+  color: #666666;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+    font-size: 18px;
+}

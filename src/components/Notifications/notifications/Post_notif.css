@@ -1,0 +1,148 @@
+
+
+  .post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+    width: 100%;
+  }
+  
+  .post__body {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    padding-left: 7px;
+  }
+  
+  .post__body > img {
+    border-radius: 20px;
+  }
+  
+  .post__footer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-right: 30px;
+    padding-left: 10px;
+    width: 80%;
+  }
+  
+  .post__headerDescription {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+  }
+.post__headerDescription > p {
+  overflow-wrap: break-word;
+}
+
+  .post__header {
+    margin-bottom: 10px;
+  }
+  .post__headerText > h3 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .post__badge {
+    font-size: 15px !important;
+    color: var(--twitter-color);
+  }
+  
+  .post__headerSpecial {
+    font-weight: 600;
+    font-size: 14px;
+    color: gray;
+  }
+  .Drop_down {
+    font-size: 0.8rem;
+    margin-left: 90%;
+    margin-top: -11.8%;
+  }
+  
+  .post__avatar {
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 7px;
+  }
+  
+  .post_prov :hover{
+  
+    background-color: rgb(239, 243, 244);
+  
+  }
+  
+  .info_user_post{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .info_user_body_pub{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .contenu_pub_gnrl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    width: 100%;
+  }
+  
+
+@media screen and (max-width : 480px ) {
+
+  .post{
+    width: 85%;
+  }
+  .info__body{
+    
+    width: 100%;
+    
+  }
+  
+  .info__header{
+
+    width: 100%;
+  }
+  
+
+  
+}
+
+.div_comm{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.comm_emoji{
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+
+.comm_input_div{
+  width: 75%
+}
+
+.comm_input{
+  width: 100%;
+  border-radius: 30px;
+  outline: none;
+  height: 50px;
+}
+
+.show_comm{
+  margin-top: 30px;
+  width: 90%;
+}

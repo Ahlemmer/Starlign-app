@@ -1,0 +1,141 @@
+.tweet_box_img_input{
+  display: flex;
+    height: auto;
+    margin-top: 15px;
+    
+    width: 100%;
+}
+.tweetBox > form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.tweetBox__input{
+  display: flex;
+  flex-direction: column;
+}
+textarea{
+  resize:none;
+}
+textarea::placeholder{
+  font-size: 17px;
+  font-weight: 500;
+}
+.text_tweet{
+  width: -webkit-fill-available;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  
+}
+
+.divtext{
+  display: flex;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.Btns_icon_tweet{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+.chaipas{
+  margin-right: 10px;
+}
+.chaipas2{
+  margin-left: 10px;
+}
+.Icon{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+ 
+ 
+   
+}
+/* .Icon > div {
+  padding: 0 12px;
+  
+} */
+@media screen and (min-width: 720px)  and (max-width: 1600px){
+
+ .tweetBox__tweetButton {
+  transform: translate(-45,0px);
+  background-color: #19A8D9 !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important; 
+ }
+}
+
+@media screen and (max-width: 720px)  {
+
+  .tweetBox__tweetButton {
+   transform: translate(-100,0px);
+   background-color: #19A8D9 !important;
+   border: none !important;
+   color: white !important;
+   font-weight: 700 !important;
+   text-transform: inherit !important;
+   border-radius: 30px !important; 
+  }
+ }
+
+
+.boximg{
+
+  padding-left: 25px;
+  padding-right: 17px;
+  padding-bottom: 15px;
+  position: relative;
+  width: 90%;
+  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.boxclose{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 30px;
+  top: 7px;
+  height: 30px;
+  width: 30px;
+  background-color: #000;
+  border-radius: 100px
+
+}
+
+.postimg{
+  width: auto;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+
+.moji{
+
+  position: absolute;
+  max-width: 250px;
+  border-radius: 20px;
+  transform: translate(-20px, -520px);
+  cursor: pointer;
+}
